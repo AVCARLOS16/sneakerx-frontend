@@ -17,8 +17,8 @@ export default function AuthScreen({ isVisible, onBack, onLoginSuccess, theme })
     setMensaje('');
 
     const url = isRegister 
-      ? 'http://localhost:8080/api/auth/registrar' 
-      : 'http://localhost:8080/api/auth/login';
+      ? 'https://sneaker-x-backend-production.up.railway.ap' 
+      : 'https://sneaker-x-backend-production.up.railway.app';
 
     const bodyData = isRegister 
       ? { nombre, email, password } 
