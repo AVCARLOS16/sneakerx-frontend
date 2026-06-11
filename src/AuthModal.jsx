@@ -16,9 +16,9 @@ export default function AuthScreen({ isVisible, onBack, onLoginSuccess, theme })
     setError('');
     setMensaje('');
 
-    const url = isRegister 
-      ? 'https://sneaker-x-backend-production.up.railway.ap' 
-      : 'git add .://sneaker-x-backend-production.up.railway.app';
+   const url = isRegister 
+  ? 'https://sneaker-x-backend-production.up.railway.app/api/auth/registrar' 
+  : 'https://sneaker-x-backend-production.up.railway.app/api/auth/login';
 
     const bodyData = isRegister 
       ? { nombre, email, password } 
